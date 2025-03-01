@@ -5,8 +5,11 @@
 
 using namespace std;
 
+// In main.cpp, change this:
 namespace Config {
-    const uint16_t AimRadius = 360;
+    static uint16_t AimRadius = 360;  // Use static instead of const
+}
+
     const uint16_t CONFIG_KEY = VK_XBUTTON2;
 }
 
